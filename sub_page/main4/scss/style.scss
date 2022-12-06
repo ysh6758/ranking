@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+@import './_config.scss';
+
+@import url('#{$path}fonts.css');
+@import url('#{$path}reset.css');
+@import url('#{$path}header.css');
+@import url('#{$path}footer.css');
+@import url('#{$path}quick_menu.css');
+
+#wrap{
+    width: 100%;
+    #main{
+        width: 100%;
+        #section1{
+            margin-top: 70px;
+            width: 100%;
+            .container{
+                width: 1100px;
+                margin: 0 auto;
+                .banner{
+                    width: 100%;
+                    a{
+                        display: block;
+                        width: 100%;
+                        height: 380px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        #section2{
+            width: 100%;
+            margin-top: 70px;
+            .container{
+                width: 1100px;
+                margin: 0 auto;
+                .title{
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 25px;
+                    h2{
+                        color: #333;
+                        font-size: 28px;
+                    }
+                }
+                .slide-container{
+                    width: 100%;
+                    height: 362px;
+                    position: relative;
+                    border: 1px solid #e6e6e6;
+                    padding: 30px 50px 45px 50px;
+                    .slide-view{
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        overflow: hidden;
+                        .slide-wrap{
+                            position: relative;
+                            width: 2020px;
+                            display: flex;
+                            >li{
+                                width: 183.59px;
+                                margin-right: 20px;
+                                &:last-child{
+                                    margin: 0;
+                                }
+                                .gap{
+                                    width: 100%;
+                                    >a{
+                                        display: block;
+                                        width: 100%;
+                                        >img{
+                                            width: 180px;
+                                            height: 180px;
+                                        }
+                                    }
+                                    .content{
+                                        width: 100%;
+                                        height: 95px;
+                                        > .row1{
+                                            padding-top: 10px;
+                                            width: 100%;
+                                            height: 20px;
+                                            display: flex;
+                                            justify-content: space-between;
+                                            img{
+                                                width: 64px;
+                                                height: 12px;
+                                            }
+                                            span{
+                                                font-size: 13px;
+                                                height: 100%;
+                                                display: block;
+                                                position: relative;
+                                                color: #999;
+                                                >i{
+                                                    padding-right: 2px;
+                                                    >img{
+                                                        width: 12px;
+                                                        height: 12px;
+
+                                                    }
+
+                                                }
+                                                em{
+                                                    color: #666;
+                                                    font-weight: 500;
+                                                    padding-right: 5px;
+                                                    position: relative;
+                                                }
+                                            }
+                                        }
+                                        .row2{
+                                            padding-top: 8px;
+                                            width: 100%;
+                                            height: 44px;
+                                            a{
+                                                display: block;
+                                                width: 100%;
+                                                height: 100%;
+                                                h2{
+                                                    font-size: 15px;
+                                                    color: #666;
+                                                    word-break: break-all;
+                                                }
+                                            }
+                                        }
+                                        .row3{
+                                            padding-bottom: 5px;
+                                            width: 100%;
+                                            display: flex;
+                                            align-items: flex-end;
+                                            justify-content: space-between;
+                                            strong{
+                                                em{
+                                                    font-size: 18px;
+                                                    color: #333;
+                                                    font-weight: 700; 
+                                                }
+                                            }
+                                            >a{
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                width: 50px;
+                                                height: 32px;
+                                                background: #fff;
+                                                border: 1px solid #ccc;
+                                                border-radius: 50px;
+                                                vertical-align: baseline;
+                                                >img{
+                                                    width: 18px;
+                                                    height: 15px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    // 좌우 화살버튼
+                    .prev-btn {               
+                       z-index: 2;
+                       position: absolute;
+                       top:50%;
+                       left: 5px;
+                       display: flex;
+                       align-items: center;
+                       justify-content: center;
+                       width:30px;
+                       height: 30px;
+                       border-radius: 50%;
+                       margin-top: -15px;
+                       background-color: #ddd;
+                       img {width:50%;}
+                       &.on{
+                        opacity: .5;
+                       }
+                    }
+                    .next-btn {
+                       z-index: 2;
+                       position: absolute;
+                       top: 50%;
+                       right:5px;
+                       display: flex;
+                       align-items: center;
+                       justify-content: center;
+                       width:30px;
+                       height: 30px;
+                       border-radius: 50%;
+                       background-color: #ddd;
+                       margin-top: -18px;
+                       transform: rotate(180deg);
+                       img {width:50%;}
+                       &.on{
+                        opacity: .5;
+                       }
+                    }
+                }
+            }
+        }
+    }
+}

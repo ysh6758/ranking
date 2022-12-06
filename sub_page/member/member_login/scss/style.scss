@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+@import './_config.scss';
+
+@import url('#{$path}fonts.css');
+@import url('#{$path}reset.css');
+@import url('#{$path}header.css');
+@import url('#{$path}footer.css');
+@import url('#{$path}quick_menu.css');
+
+#wrap{
+    width: 100%;
+    #header{
+        #topBanner{
+            display: none;
+        }
+    }
+    #main{
+        width: 100%;
+        margin-top: 0;
+        background: #f7f7f7;
+        #section1{
+            width: 100%;
+            padding: 100px 0;
+            .login-box{
+                width: 420px;
+                margin: 0 auto;
+                .title{
+                    width: 100%;
+                    strong{
+                        font-size: 32px;
+                        font-weight: 500;
+                        color: #000;
+                    }
+                    p{
+                        margin-top: 5px;
+                        display: block;
+                        font-size: 32px;
+                        font-weight: 500;
+                        color: #000;
+                        line-height: 50px;
+                        vertical-align: text-bottom;
+                        i{
+                            margin-right: 5px;
+                            img{
+                                vertical-align: top;
+                                width: 105px;
+                            }
+                        }
+                    }
+                }
+                .content{
+                    width: 100%;
+                    form{
+                        width: 100%;
+                        > ul{
+                            width: 100%;
+                            > li{
+                                width: 100%;
+                                &:first-child{
+                                    margin: 0 0 8px 0;
+                                }
+                                > input{
+                                    width: 100%;
+                                    height: 50px;
+                                    border: 1px solid #ccc;
+                                    border-radius: 5px;
+                                    outline:0;
+                                    padding: 3px 15px;
+                                    background: #fff;
+                                    &::placeholder{
+                                        color: #bbb;
+                                    }
+                                }
+                                &.check-box{
+                                    margin: 15px 0;
+                                    label{
+                                        color: #666;
+                                        font-size: 13px;
+                                        user-select: none;
+                                        cursor: pointer;
+                                        > input{
+                                            margin-right: 5px;
+                                            margin-top: -3px;
+                                            width: 22px;
+                                            height: 22px;
+                                            color: #000;
+
+                                        }
+                                        input[type="checkbox"]{display: none;}
+                                    }
+                                }
+                                &.find{
+                                    margin: 30px 0;
+                                    text-align: center;
+                                    a{
+                                        margin: 0 10px;
+                                        position: relative;
+                                        &.findPw::before{
+                                            content: '';
+                                            position: absolute;
+                                            display: inline-block;
+                                            width: 1px;
+                                            height: 8px;
+                                            background: #ccc;
+                                            top: 50%;
+                                            left: -10px;
+                                            margin-top: -4px;
+                                            
+                                        }
+                                    }
+                                }
+                                &.icon{
+                                    text-align: center;
+                                    a.sns-icon{
+                                        padding: 0 10px;
+                                    }
+                                }
+                                &.simple{
+                                    margin: 40px 0 0 0;
+                                    a.simple-btn{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 100%;
+                                        height: 50px;
+                                        background-color: #fff;
+                                        border: 1px solid #ccc;
+                                        border-radius: 5px;
+                                        color: #666;
+                                    }
+                                }
+                                &.nonmember{
+                                    width: 100%;
+                                    height: 50px;
+                                    margin-top: 10px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    a.nonmember-btn{
+                                        color: #666;
+                                    }
+                                }
+                                button{
+                                    width: 100%;
+                                    height: 50px;
+                                    border-radius: 5px;
+                                    background: #ff6001;
+                                    color: #fff;
+                                    border: 1px solid #ff6001;
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    cursor: pointer;
+                                }
+                            }
+                            .login-banner{
+                                margin-top: 30px;
+                                width: 100%;
+                                a{
+                                    display: block;
+                                    img{
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #footer{
+        margin-top: 0;
+    }
+}

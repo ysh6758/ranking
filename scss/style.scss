@@ -1,0 +1,2827 @@
+@charset "UTF-8";
+@import './_config.scss';
+@import url('#{$path}fonts.css');
+@import url('#{$path}reset.css');
+@import url('#{$path}header.css');
+@import url('#{$path}footer.css');
+@import url('#{$path}modal.css');
+@import url('#{$path}quick_menu.css');
+
+//스킵메뉴
+#skip{z-index: 2; position: fixed; top: 0; left: 0; width: 100%;}
+#skip li{width: 100%;}
+#skip li a{display: flex; width: 100%; height: 0; background: #000; color: #fff; font-size: 0; justify-content: center; align-items: center;}
+#skip li a:focus{height: 30px;font-size: 14px;}
+
+#wrap{
+    width: 100%;
+    position: relative;
+
+
+    #main{
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        #section1{
+            width: 100%;
+            .slide-container {
+                position: relative;
+                width:100%;
+                .slide-view {
+                   z-index:1;
+                   position: relative;
+                   overflow: hidden;
+                   width:100%;
+                   .slide-wrap {
+                      position: relative;
+                      width: 1903px * 16;
+                      margin-left: -1903px;
+                      display: flex;                  
+                      .slide {
+                        width:1903px;
+                         img {
+                            width: 100%;
+                         }
+                      }
+                   }
+                }
+    
+                // 페이지 카운트
+                .count-box {
+                   z-index:2;
+                   position: absolute;
+                   bottom:20px;
+                   right:440px;
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                   padding:0 13px;
+                   width:80px;
+                   height:26px;
+                   color:#fff;
+                   background:rgba(0, 0, 0, .3);
+                   border-radius:11.5px;
+                   em {
+                    font-size:14px;
+                    font-weight:400;
+                    user-select: none;
+                    }
+                    i{
+                        padding: 0 5px;
+                        user-select: none;
+                    }
+                        // 좌우 화살버튼
+                    .prev-btn {               
+                       z-index: 2;
+                       position: absolute;
+                       top:50%;
+                       left: 10%;
+                       display: block;
+                       width:12px;
+                       margin-top: -9px;
+                       img {width:100%;}
+                    }
+                    .next-btn {
+                       z-index: 2;
+                       position: absolute;
+                       top: 50%;
+                       right:10%;
+                       display: block;
+                       width:12px;
+                       margin-top: -6px;
+                       transform: rotate(180deg);
+                       img {width:100%;}
+                    }
+                   
+                }
+                .modal-btn{
+                    z-index:3;
+                    position: absolute;
+                    width: 26px;
+                    height: 26px;
+                    background: rgba(0, 0, 0, .3);
+                    bottom:20px;
+                    right:410px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    img{
+                        width: 10px;
+                    }
+                }
+            }
+        }
+        #section2{
+            width: 100%;
+            height: 109px;
+            margin-top: 90px;
+            .slide-container {
+                position: relative;
+                width:1100px;
+                padding: 0 70px;
+                margin: 0 auto;
+                .slide-view {
+                   z-index:1;
+                   position: relative;
+                   overflow: hidden;
+                   width:100%;
+                   .slide-wrap {
+                      position: relative;
+                      width: 2136px;
+                      height: 100%;
+                      padding-bottom: 10px;
+                      display: flex;
+                      .slide {
+                        width:78px;
+                        height: 99px;
+                        margin-right: 20px;
+                        //이미지사이즈 조절
+                        &:nth-child(3){
+                            .category-box{
+                                a{
+                                    .icon-box{
+                                        img{width: 30px;}
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(5){
+                            .category-box{
+                                a{
+                                    .icon-box{
+                                        img{width: 30px;}
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(8){
+                            .category-box{
+                                a{
+                                    .icon-box{
+                                        img{width: 30px;}
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(12){
+                            .category-box{
+                                a{
+                                    .icon-box{
+                                        img{width: 30px;}
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(15){
+                            .category-box{
+                                a{
+                                    .icon-box{
+                                        img{width: 30px;}
+                                    }
+                                }
+                            }
+                        }
+                        .category-box{
+                            width: 100%;
+                            height: 100%;
+                            a{
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                .icon-box{
+                                    width: 78px;
+                                    height: 78px;
+                                    background-color: #f8f8f8;
+                                    border-radius: 24px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    img {
+                                       width: 48px;
+
+                                    }
+                                }
+                                span{
+                                    display: block;
+                                    text-align: center;
+                                    margin-top: 7px;
+                                    font-size: 14px;
+                                    color: #666;
+                                    white-space: nowrap;
+                                }
+                            }
+                        }
+                      }
+                   }
+                }
+                // 슬라이드 버튼
+                .prev-box{
+                    z-index:2;
+                    position: absolute;
+                    top: 20%;
+                    left: 0;
+                    margin-left: -19px;
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid #e6e6e6;
+                    border-radius: 50%;
+                    background: rgba(0,0,0, .1);
+                    a{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 100%;
+                        img{
+                            width:15px;
+                        }
+                    }
+                }
+                .next-box{
+                    z-index:2;
+                    position: absolute;
+                    top: 20%;
+                    right: 0;
+                    margin-right: -19px;
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid #e6e6e6;
+                    border-radius: 50%;
+                    background: rgba(0,0,0, .1);
+                    a{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 100%;
+                        img{
+                            width:15px;
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+        }
+        #section3{
+            width: 100%;
+            margin-top: 90px;
+            .title{
+                width: 1140px;
+                margin: 0 auto;
+                margin-bottom: 30px;
+                h2{
+                    font-size: 28px;
+                    font-weight: 700;
+                    text-align: center;
+                    color: #333;
+                }
+            }
+            .slide-container {
+                position: relative;
+                width:1140px;
+                padding: 0 20px;
+                margin: 0 auto;
+                .slide-view {
+                   z-index:1;
+                   position: relative;
+                   overflow: hidden;
+                   width:100%;
+                   .slide-wrap {
+                      position: relative;
+                      width: 3300px;
+                      height: 100%;
+                      padding-bottom: 10px;
+                      display: flex;
+                      .slide {
+                        width:256.25px;
+                        height: 313.25px;
+                        margin-right: 25px;
+                        .category-box{
+                            width: 100%;
+                            height: 100%;
+                            a{
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                img {
+                                    border-radius: 10px;
+                                    width:256.25px;
+                                    height: 255.25px;
+                                }
+                                .text-box{
+                                    width: 100%;
+                                    margin-top: 15px;
+                                    em{
+                                        font-weight: 700;
+                                        font-size: 16px;
+                                    }
+                                    h3{
+                                        font-weight: 500;
+                                        padding-top: 7px;
+                                        color: #999;
+                                    }
+                                }
+                            }
+                        }
+                      }
+                   }
+                }
+                // 슬라이드 버튼
+                .prev-box{
+                    z-index:2;
+                    position: absolute;
+                    top: 33%;
+                    left: 0;
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid #e6e6e6;
+                    border-radius: 50%;
+                    background: rgba(0,0,0, .2);
+                    &.on{
+                        opacity: .4;
+                    }
+                    a{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 100%;
+                        img{
+                            width:15px;
+                        }
+                    }
+                }
+                .next-box{
+                    z-index:2;
+                    position: absolute;
+                    top: 33%;
+                    right: 0;
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid #e6e6e6;
+                    border-radius: 50%;
+                    background: rgba(0,0,0, .2);
+                    &.on{
+                        opacity: .4;
+                    }
+                    a{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 100%;
+                        img{
+                            width:15px;
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+        }
+        #section4{
+            width: 100%;
+            height: 321px;
+            margin-top: 90px;
+            .container{
+                width: 1100px;
+                margin: 0 auto;
+                display: flex;
+                .left-box{
+                    width: 380px;
+                    margin: auto 0;
+                    h2{
+                        font-size: 28px;
+                        font-weight: 600;
+                        color: #333;
+                        i{
+                            width: 33px;
+                            height: 33px;
+                            padding-right: 5px;
+                            img{
+
+                            }
+                        }
+                    }
+                    p{
+                        padding-top: 30px;
+                        font-size: 16px;
+                        color: #666;
+                    }
+                }
+                .slide-container {
+                    position: relative;
+                    width:720px;
+                    margin: 0 auto;
+                    .slide-view {
+                       z-index:1;
+                       position: relative;
+                       overflow: hidden;
+                       width:100%;
+                       .slide-wrap {
+                          position: relative;
+                          width: 1080px;
+                          height: 100%;
+                          display: flex;
+                          .slide {
+                            width:340px;
+                            height: 321px;
+                            margin-right: 40px;
+                            a{
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                .img-box{
+                                    
+                                    img{
+                                        width: 340px;
+                                        border-radius: 10px 10px 0 0;
+                                    }
+                                    .timer{
+                                        width: 100%;
+                                        height: 36px;
+                                        background: rgb(247, 153, 96);
+                                        border-radius: 0 0 10px 10px;
+                                        position: relative;
+                                        > span{
+                                            display: block;
+                                            width: 100%;
+                                            height: 100%;
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            font-weight: 700;
+                                            font-size: 17px;
+                                            color: #fff;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            > i{
+                                                display: flex;
+                                                align-items: center;
+                                                height: 100%;
+                                                padding-right: 5px;
+                                                > img{
+                                                    width: 20px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .text-box{
+                                    .row1{
+                                        margin: 10px 0;
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        img{
+                                            width: 64px;
+                                        }
+                                        span{
+                                            font-size: 13px;
+                                            color: #666;
+                                            img{
+                                                margin-right: 2px;
+                                                width: 12px;
+                                            }
+                                            em{
+                                                margin-left: 2px;
+                                                color: #999;
+                                            }
+                                        }
+                                    }
+                                    .row2{
+                                        padding-bottom: 30px;
+                                        h2{
+                                            font-size: 16px;
+                                            color: #333;
+                                            line-height: 22px;
+                                        }
+                                    }
+                                    .row3{
+                                        width: 100%;
+                                        display: flex;
+                                        .price{
+                                            margin-left: 5px;
+                                            em{ 
+                                                vertical-align: bottom;
+                                                color: #333;
+                                                font-weight: 700;
+                                                font-size: 20px;
+                                            }
+                                            > strong{
+                                                color: rgb(241, 82, 32);
+                                                font-size: 20px;
+                                                font-weight: bold;
+                                            }
+                                        }
+                                        .origin{
+                                            padding: 6px 0 0 5px;
+                                            font-size: 15px;
+                                            color: #bbb;
+                                            text-decoration: line-through;
+                                        }
+                                        .remain{
+                                            color: #333;
+                                            margin-left: auto;
+                                            > strong{
+                                                font-size: 13px;
+                                                font-weight: bold;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                          }
+                       }
+                    }
+                    // 슬라이드 버튼
+                    .prev-box{
+                        z-index:2;
+                        position: absolute;
+                        top: 23%;
+                        left: 0;
+                        margin-left: -19px;
+                        width: 40px;
+                        height: 40px;
+                        border: 1px solid #e6e6e6;
+                        border-radius: 50%;
+                        background: rgba(0,0,0, .2);
+                        &.on{
+                            opacity: .4;
+                        }
+                        a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 100%;
+                            img{
+                                width:15px;
+                            }
+                        }
+                    }
+                    .next-box{
+                        z-index:2;
+                        position: absolute;
+                        top: 23%;
+                        right: 0;
+                        margin-right: -19px;
+                        width: 40px;
+                        height: 40px;
+                        border: 1px solid #e6e6e6;
+                        border-radius: 50%;
+                        background: rgba(0,0,0, .2);
+                        &.on{
+                            opacity: .4;
+                        }
+                        a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 100%;
+                            img{
+                                width:15px;
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #section5{
+            width: 100%;
+            margin-top: 90px;
+            .title{
+                width: 1140px;
+                margin: 0 auto;
+                margin-bottom: 30px;
+                h2{
+                    font-size: 28px;
+                    font-weight: 700;
+                    text-align: center;
+                    color: #333;
+                }
+            }
+            .container{
+                width: 1100px;
+                margin: 0 auto;
+                display: flex;
+                .slide-container {
+                    position: relative;
+                    width:1100px;
+                    margin: 0 auto;
+                    .slide-view {
+                       z-index:1;
+                       position: relative;
+                       overflow: hidden;
+                       width:100%;
+                       .slide-wrap {
+                          position: relative;
+                          width: 1080px;
+                          height: 100%;
+                          display: flex;
+                          .slide {
+                            width:340px;
+                            height: 100%;
+                            margin-right: 25px;
+                            a{
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                .img-box{
+                                    width: 100%;
+                                    img{
+                                        width: 256px;
+                                        border-radius: 10px;
+                                    }
+                                    .timer{
+                                        width: 100%;
+                                        height: 36px;
+                                        background: rgb(247, 153, 96);
+                                        border-radius: 0 0 10px 10px;
+                                        position: relative;
+                                        > span{
+                                            display: block;
+                                            width: 100%;
+                                            height: 100%;
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            font-weight: 700;
+                                            font-size: 17px;
+                                            color: #fff;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            > i{
+                                                display: flex;
+                                                align-items: center;
+                                                height: 100%;
+                                                padding-right: 5px;
+                                                > img{
+                                                    width: 20px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .text-box{
+                                    .row1{
+                                        margin: 10px 0;
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        img{
+                                            width: 64px;
+                                        }
+                                        span{
+                                            font-size: 13px;
+                                            color: #666;
+                                            img{
+                                                margin-right: 2px;
+                                                width: 12px;
+                                            }
+                                            em{
+                                                margin-left: 2px;
+                                                color: #999;
+                                            }
+                                        }
+                                    }
+                                    .row2{
+                                        padding-bottom: 25px;
+                                        h2{
+                                            font-size: 16px;
+                                            color: #333;
+                                            line-height: 22px;
+                                        }
+                                    }
+                                    .row3{
+                                        width: 100%;
+                                        display: flex;
+                                        > strong{
+                                            color: rgb(241, 82, 32);
+                                            font-size: 20px;
+                                            font-weight: bold;
+                                        }
+                                        .price{
+                                            margin-left: 5px;
+                                            em{ 
+                                                vertical-align: bottom;
+                                                color: #333;
+                                                font-weight: 700;
+                                                font-size: 20px;
+                                            }
+                                        }
+                                        .origin{
+                                            padding: 6px 0 0 5px;
+                                            font-size: 15px;
+                                            color: #bbb;
+                                            text-decoration: line-through;
+                                        }
+                                        .remain{
+                                            color: #333;
+                                            margin-left: auto;
+                                            > strong{
+                                                font-size: 13px;
+                                                font-weight: bold;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                          }
+                       }
+                    }
+                    // 슬라이드 버튼
+                    .prev-box{
+                        z-index:2;
+                        position: absolute;
+                        top: 128px;
+                        left: 0;
+                        margin: -19px 0 0 -19px;
+                        width: 40px;
+                        height: 40px;
+                        border: 1px solid #e6e6e6;
+                        border-radius: 50%;
+                        background: rgba(0,0,0, .2);
+                        &.on{
+                            opacity: .4;
+                        }
+                        a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 100%;
+                            img{
+                                width:15px;
+                            }
+                        }
+                    }
+                    .next-box{
+                        z-index:2;
+                        position: absolute;
+                        top: 128px;
+                        right: 0;
+                        margin: -19px -19px 0 0;
+                        width: 40px;
+                        height: 40px;
+                        border: 1px solid #e6e6e6;
+                        border-radius: 50%;
+                        background: rgba(0,0,0, .2);
+                        &.on{
+                            opacity: .4;
+                        }
+                        a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 100%;
+                            img{
+                                width:15px;
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+                }
+            }
+            // 추천상품 새로고침
+            >.refresh-btn-box{
+                width: 100%;
+                height: 50px;
+                margin-top: 30px;
+                display: flex;
+                justify-content: center;
+                button{
+                    width: 192.5px;
+                    height: 100%;
+                    border: 1px solid #ccc;
+                    border-radius: 8em;
+                    font-size: 14px;
+                    background-color: #fff;
+                    color: #666;
+                    cursor: pointer;
+                    em{
+                        color: #ff7b43;
+                    }
+                    i{
+
+                        img{
+                            margin-top: -4px;
+                        }
+                    }
+                }
+            }
+        }
+        #section6{
+            width: 100%;
+            margin-top: 90px;
+            .container{
+                width: 1100px;
+                height: 546px;
+                margin: 0 auto;
+                .title{
+                    width: 100%;
+                    margin-bottom: 26px;
+                    h2{
+                        text-align: center;
+                        font-size: 26px;
+                        color: #333;
+                        font-weight: 700;
+                    }
+                }
+                .content{
+                    width: 100%;
+                    height: 500px;
+                    .btn-container{
+                        width: 100%;
+                        height: 48px;
+                        margin-bottom: 15px;
+                        ul{
+                            display: flex;
+                            justify-content: center;
+                            li{
+                                margin: 4px;
+                                button{
+                                    height: 40px;
+                                    background: #f8f8f8;
+                                    border: 0;
+                                    border-radius: 10px;
+                                    font-size: 13px;
+                                    color: #333;
+                                    padding: 11px 13px;
+                                    cursor: pointer;
+                                    &.on{
+                                        color: #fff;
+                                        background: #ff7b43;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .recomend1-5{
+                        width: 100%;
+                        height: 436px;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        border: 1px solid #ddd;
+                        font-size: 0;
+                        &.recomend-box2{
+                            display: none;
+                        }
+                        &.recomend-box3{
+                            display: none;
+                        }
+                        &.recomend-box4{
+                            display: none;
+                        }
+                        &.recomend-box5{
+                            display: none;
+                        }
+                        .left{
+                            width: 670px;
+                            height: 100%;
+                            position: relative;
+                            display: inline-block;
+                            img{
+                                width: 100%;
+                                position: relative;
+                                z-index: 1;
+                            }
+                            .text{
+                                position: absolute;
+                                z-index: 2;
+                                bottom: 20px;
+                                right: 20px;
+                                width: 368px;
+                                height: 110px;
+                                background-color: rgba(255, 255, 255, .8);
+                                border-radius: 5px;
+                                margin: auto 0;
+                                padding: 22px 22px 20px;
+                                em{
+                                    color: #333;
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                }
+                                strong{
+                                    margin-top: 6px;
+                                    color: #666;
+                                    font-size: 13px;
+                                    line-height: 20px;
+                                }
+                            }
+                        }
+                        .right{
+                            width: 428px;
+                            height: 100%;
+                            display: inline-block;
+                            .gap{
+                                padding: 15px 25px;
+
+                                ul{
+                                    height: 360px;
+                                    li{
+                                        margin-top: 13px;
+                                        display: flex;
+                                        &:nth-child(1){
+                                            margin: 0;
+                                        }
+                                        label{
+                                            width: 118px;
+                                            height: 80px;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: space-between;
+                                            cursor: pointer;
+                                            > .check-box{
+                                                display: block;
+                                                width: 20px;
+                                                height: 20px;
+                                                appearance: none; //라디오 ux ui 디자인이 가능한 상태
+                                                padding: 0; //입력상자에 패딩값이 있어서 옆으로 길죽하게 된 상태 해결
+                                                border: 1px solid #ccc;
+                                                border-radius: 4px;
+                                                cursor: pointer;
+                                                &:checked{
+                                                    background: url(../img/check_bg.png) no-repeat 50% 50%;
+                                                    background-size: cover;
+                                                 }
+                                            }
+                                            img{
+                                                width: 80px;
+                                                height: 80px;
+                                                border-radius: 5px;
+                                            }
+                                        }
+                                        a{
+                                            display: block;
+                                            width: 232px;
+                                            height: 68px;
+                                            margin: auto 0;
+                                            padding: 0px 15px;
+                                            h3{
+                                                margin-bottom: 10px;
+                                                font-size: 14px;
+                                                color: #222;
+                                                line-height: 20px;
+                                            }
+                                            span{
+                                                strong{
+                                                    color: #333;
+                                                    font-size: 15px;
+                                                    font-weight: bold;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .btn-box{
+                                width: 100%;
+                                height: 44px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                button{
+                                    width: 100%;
+                                    height: 100%;
+                                    background: #333;
+                                    cursor: pointer;
+                                    font-size: 14px;
+                                    color: #fff;
+                                    font-weight: 600;
+                                    border: 1px solid #333;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #section7{
+            width: 100%;
+            margin-top: 90px;//임시
+            .container{
+                width: 1100px;
+                margin: 0 auto;
+                .banner{
+                    display: block;
+                    img{
+                        width: 100%;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+        #section8{
+            width: 100%;
+            margin-top: 90px;
+            .title{
+                width: 1140px;
+                margin: 0 auto;
+                margin-bottom: 30px;
+                h2{
+                    font-size: 28px;
+                    font-weight: 700;
+                    text-align: center;
+                    color: #333;
+                }
+            }
+            .container{
+                width: 1100px;
+                margin: 0 auto;
+                display: flex;
+                .slide-container {
+                    position: relative;
+                    width:1100px;
+                    margin: 0 auto;
+                    .slide-view {
+                       z-index:1;
+                       position: relative;
+                       overflow: hidden;
+                       width:100%;
+                       .slide-wrap {
+                          position: relative;
+                          width: 1080px;
+                          height: 100%;
+                          display: flex;
+                          .slide {
+                            width:340px;
+                            height: 100%;
+                            margin-right: 25px;
+                            a{
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                .img-box{
+                                    img{
+                                        width: 256px;
+                                        border-radius: 10px;
+                                    }
+                                }
+                                .text-box{
+                                    .row1{
+                                        margin: 10px 0;
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        img{
+                                            width: 64px;
+                                        }
+                                        span{
+                                            font-size: 13px;
+                                            color: #666;
+                                            img{
+                                                margin-right: 2px;
+                                                width: 12px;
+                                            }
+                                            em{
+                                                margin-left: 2px;
+                                                color: #999;
+                                            }
+                                        }
+                                    }
+                                    .row2{
+                                        padding-bottom: 5px;
+                                        h2{
+                                            font-size: 16px;
+                                            color: #333;
+                                            line-height: 22px;
+                                        }
+                                    }
+                                    .row3{
+                                        width: 100%;
+                                        display: flex;
+                                        .price{
+                                            em{ 
+                                                vertical-align: bottom;
+                                                color: #333;
+                                                font-weight: 700;
+                                                font-size: 20px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                          }
+                       }
+                    }
+                    // 슬라이드 버튼
+                    .prev-box{
+                        z-index:2;
+                        position: absolute;
+                        top: 128px;
+                        left: 0;
+                        margin: -19px 0 0 -19px;
+                        width: 40px;
+                        height: 40px;
+                        border: 1px solid #e6e6e6;
+                        border-radius: 50%;
+                        background: rgba(0,0,0, .2);
+                        &.on{
+                            opacity: .4;
+                        }
+                        a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 100%;
+                            img{
+                                width:15px;
+                            }
+                        }
+                    }
+                    .next-box{
+                        z-index:2;
+                        position: absolute;
+                        top: 128px;
+                        right: 0;
+                        margin: -19px -19px 0 0;
+                        width: 40px;
+                        height: 40px;
+                        border: 1px solid #e6e6e6;
+                        border-radius: 50%;
+                        background: rgba(0,0,0, .2);
+                        &.on{
+                            opacity: .4;
+                        }
+                        a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 100%;
+                            img{
+                                width:15px;
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+                }
+            }
+            .refresh-btn-box{
+                width: 100%;
+                height: 50px;
+                margin-top: 30px;
+                display: flex;
+                justify-content: center;
+                button{
+                    width: 192.5px;
+                    height: 100%;
+                    border: 1px solid #ccc;
+                    border-radius: 8em;
+                    font-size: 14px;
+                    background-color: #fff;
+                    color: #666;
+                    cursor: pointer;
+                    em{
+                        color: #ff7b43;
+                    }
+                    i{
+
+                        img{
+                            margin-top: -4px;
+                        }
+                    }
+                }
+            }
+        }
+        #section9{
+            width: 100%;
+            margin-top: 90px;
+            .title{
+                width: 1140px;
+                margin: 0 auto;
+                margin-bottom: 30px;
+                h2{
+                    font-size: 28px;
+                    font-weight: 700;
+                    text-align: center;
+                    color: #333;
+                }
+            }
+            .container{
+                width: 1100px;
+                margin: 0 auto;
+                display: flex;
+                .slide-container {
+                    position: relative;
+                    width:1100px;
+                    margin: 0 auto;
+                    .slide-view {
+                       z-index:1;
+                       position: relative;
+                       overflow: hidden;
+                       width:100%;
+                       .slide-wrap {
+                          position: relative;
+                          width: 1080px;
+                          height: 100%;
+                          display: flex;
+                          .slide {
+                            width:340px;
+                            height: 100%;
+                            margin-right: 25px;
+                            a{
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                .img-box{
+                                    
+                                    img{
+                                        width: 256px;
+                                        border-radius: 10px;
+                                    }
+                                    .timer{
+                                        width: 100%;
+                                        height: 36px;
+                                        background: rgb(247, 153, 96);
+                                        border-radius: 0 0 10px 10px;
+                                        position: relative;
+                                        > span{
+                                            display: block;
+                                            width: 100%;
+                                            height: 100%;
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            font-weight: 700;
+                                            font-size: 17px;
+                                            color: #fff;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            > i{
+                                                display: flex;
+                                                align-items: center;
+                                                height: 100%;
+                                                padding-right: 5px;
+                                                > img{
+                                                    width: 20px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .text-box{
+                                    .row1{
+                                        margin: 10px 0;
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        img{
+                                            width: 64px;
+                                        }
+                                        span{
+                                            font-size: 13px;
+                                            color: #666;
+                                            img{
+                                                margin-right: 2px;
+                                                width: 12px;
+                                            }
+                                            em{
+                                                margin-left: 2px;
+                                                color: #999;
+                                            }
+                                        }
+                                    }
+                                    .row2{
+                                        padding-bottom: 25px;
+                                        h2{
+                                            font-size: 16px;
+                                            color: #333;
+                                            line-height: 22px;
+                                        }
+                                    }
+                                    .row3{
+                                        width: 100%;
+                                        display: flex;
+                                        > strong{
+                                            color: rgb(241, 82, 32);
+                                            font-size: 20px;
+                                            font-weight: bold;
+                                        }
+                                        .price{
+                                            margin-left: 5px;
+                                            em{ 
+                                                vertical-align: bottom;
+                                                color: #333;
+                                                font-weight: 700;
+                                                font-size: 20px;
+                                            }
+                                        }
+                                        .origin{
+                                            padding: 6px 0 0 5px;
+                                            font-size: 15px;
+                                            color: #bbb;
+                                            text-decoration: line-through;
+                                        }
+                                        .remain{
+                                            color: #333;
+                                            margin-left: auto;
+                                            > strong{
+                                                font-size: 13px;
+                                                font-weight: bold;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                          }
+                       }
+                    }
+                    // 슬라이드 버튼
+                    .prev-box{
+                        z-index:2;
+                        position: absolute;
+                        top: 128px;
+                        left: 0;
+                        margin: -19px 0 0 -19px;
+                        width: 40px;
+                        height: 40px;
+                        border: 1px solid #e6e6e6;
+                        border-radius: 50%;
+                        background: rgba(0,0,0, .2);
+                        &.on{
+                            opacity: .4;
+                        }
+                        a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 100%;
+                            img{
+                                width:15px;
+                            }
+                        }
+                    }
+                    .next-box{
+                        z-index:2;
+                        position: absolute;
+                        top: 128px;
+                        right: 0;
+                        margin: -19px -19px 0 0;
+                        width: 40px;
+                        height: 40px;
+                        border: 1px solid #e6e6e6;
+                        border-radius: 50%;
+                        background: rgba(0,0,0, .2);
+                        &.on{
+                            opacity: .4;
+                        }
+                        a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 100%;
+                            img{
+                                width:15px;
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+                }
+            }
+            .refresh-btn-box{
+                width: 100%;
+                height: 50px;
+                margin-top: 30px;
+                display: flex;
+                justify-content: center;
+                button{
+                    width: 192.5px;
+                    height: 100%;
+                    border: 1px solid #ccc;
+                    border-radius: 8em;
+                    font-size: 14px;
+                    background-color: #fff;
+                    color: #666;
+                    cursor: pointer;
+                    em{
+                        color: #ff7b43;
+                    }
+                    i{
+
+                        img{
+                            margin-top: -4px;
+                        }
+                    }
+                }
+            }
+        }
+        #section10{
+            width: 100%;
+            margin-top: 90px;
+            .container{
+                width: 1100px;
+                margin: 0 auto;
+                .banner{
+                    display: block;
+                    img{
+                        width: 100%;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+        #section11{
+            width: 100%;
+            margin-top: 90px;
+            .title{
+                width: 1140px;
+                margin: 0 auto;
+                margin-bottom: 30px;
+                h2{
+                    font-size: 28px;
+                    font-weight: 700;
+                    text-align: center;
+                    color: #333;
+                }
+            }
+            .container{
+                width: 1100px;
+                margin: 0 auto;
+                display: flex;
+                .slide-container {
+                    position: relative;
+                    width:1100px;
+                    margin: 0 auto;
+                    .slide-view {
+                       z-index:1;
+                       position: relative;
+                       overflow: hidden;
+                       width:100%;
+                       .slide-wrap {
+                          position: relative;
+                          width: 1080px;
+                          height: 100%;
+                          display: flex;
+                          .slide {
+                            width:340px;
+                            height: 100%;
+                            margin-right: 25px;
+                            a{
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                .img-box{
+                                    
+                                    img{
+                                        width: 256px;
+                                        border-radius: 10px;
+                                    }
+                                    .timer{
+                                        width: 100%;
+                                        height: 36px;
+                                        background: rgb(247, 153, 96);
+                                        border-radius: 0 0 10px 10px;
+                                        position: relative;
+                                        > span{
+                                            display: block;
+                                            width: 100%;
+                                            height: 100%;
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            font-weight: 700;
+                                            font-size: 17px;
+                                            color: #fff;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            > i{
+                                                display: flex;
+                                                align-items: center;
+                                                height: 100%;
+                                                padding-right: 5px;
+                                                > img{
+                                                    width: 20px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .text-box{
+                                    .row1{
+                                        margin: 10px 0;
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        img{
+                                            width: 64px;
+                                        }
+                                        span{
+                                            font-size: 13px;
+                                            color: #666;
+                                            img{
+                                                margin-right: 2px;
+                                                width: 12px;
+                                            }
+                                            em{
+                                                margin-left: 2px;
+                                                color: #999;
+                                            }
+                                        }
+                                    }
+                                    .row2{
+                                        padding-bottom: 25px;
+                                        h2{
+                                            font-size: 16px;
+                                            color: #333;
+                                            line-height: 22px;
+                                        }
+                                    }
+                                    .row3{
+                                        width: 100%;
+                                        display: flex;
+                                        > strong{
+                                            color: rgb(241, 82, 32);
+                                            font-size: 20px;
+                                            font-weight: bold;
+                                        }
+                                        .price{
+                                            margin-left: 5px;
+                                            em{ 
+                                                vertical-align: bottom;
+                                                color: #333;
+                                                font-weight: 700;
+                                                font-size: 20px;
+                                            }
+                                        }
+                                        .origin{
+                                            padding: 6px 0 0 5px;
+                                            font-size: 15px;
+                                            color: #bbb;
+                                            text-decoration: line-through;
+                                        }
+                                        .remain{
+                                            color: #333;
+                                            margin-left: auto;
+                                            > strong{
+                                                font-size: 13px;
+                                                font-weight: bold;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                          }
+                       }
+                    }
+                    // 슬라이드 버튼
+                    .prev-box{
+                        z-index:2;
+                        position: absolute;
+                        top: 128px;
+                        left: 0;
+                        margin: -19px 0 0 -19px;
+                        width: 40px;
+                        height: 40px;
+                        border: 1px solid #e6e6e6;
+                        border-radius: 50%;
+                        background: rgba(0,0,0, .2);
+                        &.on{
+                            opacity: .4;
+                        }
+                        a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 100%;
+                            img{
+                                width:15px;
+                            }
+                        }
+                    }
+                    .next-box{
+                        z-index:2;
+                        position: absolute;
+                        top: 128px;
+                        right: 0;
+                        margin: -19px -19px 0 0;
+                        width: 40px;
+                        height: 40px;
+                        border: 1px solid #e6e6e6;
+                        border-radius: 50%;
+                        background: rgba(0,0,0, .2);
+                        &.on{
+                            opacity: .4;
+                        }
+                        a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 100%;
+                            img{
+                                width:15px;
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+                }
+            }
+            .view-all-box{
+                width: 100%;
+                height: 50px;
+                margin-top: 30px;
+                display: flex;
+                justify-content: center;
+                button{
+                    width: 300px;
+                    height: 100%;
+                    border: 1px solid #ccc;
+                    border-radius: 10px;
+                    font-size: 14px;
+                    background-color: #fff;
+                    color: #666;
+                    cursor: pointer;
+                    em{
+                        color: #ff7b43;
+                    }
+                    i{
+                        margin-left: 8px;
+                        width: 12px;
+                        height: 12px;
+                        position: relative;
+                        
+                        &::before{
+                            content: '';
+                            height: 1px;
+                            width:  8px;
+                            transform: rotate(45deg);
+                            background-color: #000;
+                            position: absolute;
+                            bottom: 63%;
+                            left: 50%;
+                        }
+                        &::after{
+                            content: '';
+                            height: 1px;
+                            width:  8px;
+                            transform: rotate(-45deg);
+                            background-color: #000;
+                            position: absolute;
+                            bottom: 30%;
+                            left: 50%;
+                        }
+                    }
+                }
+            }
+        }
+        #section12{
+            width: 100%;
+            margin-top: 90px;
+            .title{
+                width: 1140px;
+                margin: 0 auto;
+                margin-bottom: 30px;
+                h2{
+                    font-size: 28px;
+                    font-weight: 700;
+                    text-align: center;
+                    color: #333;
+                }
+            }
+            .container{
+                width: 1100px;
+                margin: 0 auto;
+                display: flex;
+                .slide-container {
+                    position: relative;
+                    width:1100px;
+                    margin: 0 auto;
+                    .slide-view {
+                       z-index:1;
+                       position: relative;
+                       overflow: hidden;
+                       width:100%;
+                       .slide-wrap {
+                          position: relative;
+                          width: 1080px;
+                          height: 100%;
+                          display: flex;
+                          .slide {
+                            width:340px;
+                            height: 100%;
+                            margin-right: 25px;
+                            a{
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                .img-box{
+                                    
+                                    img{
+                                        width: 256px;
+                                        border-radius: 10px;
+                                    }
+                                    .timer{
+                                        width: 100%;
+                                        height: 36px;
+                                        background: rgb(247, 153, 96);
+                                        border-radius: 0 0 10px 10px;
+                                        position: relative;
+                                        > span{
+                                            display: block;
+                                            width: 100%;
+                                            height: 100%;
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            font-weight: 700;
+                                            font-size: 17px;
+                                            color: #fff;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            > i{
+                                                display: flex;
+                                                align-items: center;
+                                                height: 100%;
+                                                padding-right: 5px;
+                                                > img{
+                                                    width: 20px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .text-box{
+                                    .row1{
+                                        margin: 10px 0;
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        img{
+                                            width: 64px;
+                                        }
+                                        span{
+                                            font-size: 13px;
+                                            color: #666;
+                                            img{
+                                                margin-right: 2px;
+                                                width: 12px;
+                                            }
+                                            em{
+                                                margin-left: 2px;
+                                                color: #999;
+                                            }
+                                        }
+                                    }
+                                    .row2{
+                                        padding-bottom: 25px;
+                                        h2{
+                                            font-size: 16px;
+                                            color: #333;
+                                            line-height: 22px;
+                                        }
+                                    }
+                                    .row3{
+                                        width: 100%;
+                                        display: flex;
+                                        > strong{
+                                            color: rgb(241, 82, 32);
+                                            font-size: 20px;
+                                            font-weight: bold;
+                                        }
+                                        .price{
+                                            margin-left: 5px;
+                                            em{ 
+                                                vertical-align: bottom;
+                                                color: #333;
+                                                font-weight: 700;
+                                                font-size: 20px;
+                                            }
+                                        }
+                                        .origin{
+                                            padding: 6px 0 0 5px;
+                                            font-size: 15px;
+                                            color: #bbb;
+                                            text-decoration: line-through;
+                                        }
+                                        .remain{
+                                            color: #333;
+                                            margin-left: auto;
+                                            > strong{
+                                                font-size: 13px;
+                                                font-weight: bold;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                          }
+                       }
+                    }
+                    // 슬라이드 버튼
+                    .prev-box{
+                        z-index:2;
+                        position: absolute;
+                        top: 128px;
+                        left: 0;
+                        margin: -19px 0 0 -19px;
+                        width: 40px;
+                        height: 40px;
+                        border: 1px solid #e6e6e6;
+                        border-radius: 50%;
+                        background: rgba(0,0,0, .2);
+                        &.on{
+                            opacity: .4;
+                        }
+                        a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 100%;
+                            img{
+                                width:15px;
+                            }
+                        }
+                    }
+                    .next-box{
+                        z-index:2;
+                        position: absolute;
+                        top: 128px;
+                        right: 0;
+                        margin: -19px -19px 0 0;
+                        width: 40px;
+                        height: 40px;
+                        border: 1px solid #e6e6e6;
+                        border-radius: 50%;
+                        background: rgba(0,0,0, .2);
+                        &.on{
+                            opacity: .4;
+                        }
+                        a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 100%;
+                            img{
+                                width:15px;
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+                }
+            }
+            .view-all-box{
+                width: 100%;
+                height: 50px;
+                margin-top: 30px;
+                display: flex;
+                justify-content: center;
+                button{
+                    width: 300px;
+                    height: 100%;
+                    border: 1px solid #ccc;
+                    border-radius: 10px;
+                    font-size: 14px;
+                    background-color: #fff;
+                    color: #666;
+                    cursor: pointer;
+                    em{
+                        color: #ff7b43;
+                    }
+                    i{
+                        margin-left: 8px;
+                        width: 12px;
+                        height: 12px;
+                        position: relative;
+                        
+                        &::before{
+                            content: '';
+                            height: 1px;
+                            width:  8px;
+                            transform: rotate(45deg);
+                            background-color: #000;
+                            position: absolute;
+                            bottom: 63%;
+                            left: 50%;
+                        }
+                        &::after{
+                            content: '';
+                            height: 1px;
+                            width:  8px;
+                            transform: rotate(-45deg);
+                            background-color: #000;
+                            position: absolute;
+                            bottom: 30%;
+                            left: 50%;
+                        }
+                    }
+                }
+            }
+        }
+        #section13{
+            width: 100%;
+            margin-top: 90px;
+            .title{
+                width: 1140px;
+                margin: 0 auto;
+                margin-bottom: 30px;
+                h2{
+                    font-size: 28px;
+                    font-weight: 700;
+                    text-align: center;
+                    color: #333;
+                }
+            }
+            .container{
+                width: 1100px;
+                margin: 0 auto;
+                display: flex;
+                .slide-container {
+                    position: relative;
+                    width:1100px;
+                    margin: 0 auto;
+                    .slide-view {
+                       z-index:1;
+                       position: relative;
+                       overflow: hidden;
+                       width:100%;
+                       .slide-wrap {
+                          position: relative;
+                          width: 2240px;
+                          height: 100%;
+                          display: flex;
+                          .slide {
+                            width:340px;
+                            height: 100%;
+                            margin-right: 40px;
+                            a{
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                .img-box{
+                                    width: 340px;
+                                    position: relative;
+                                    img{
+                                        width: 100%;
+                                        border-radius: 10px;
+                                        position: relative;
+                                        z-index: 1;
+                                    }
+                                    i{
+                                        z-index: 2;
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 50%;
+                                        margin-top: -70px;
+                                        margin-left: -70px;
+                                        display: block;
+                                        width: 140px;
+                                        height: 140px;
+                                        img{
+
+                                        }
+                                    }
+                                }
+                                .text-box{
+                                    width: 100%;
+                                    margin-top: 10px;
+                                    p{
+                                        color: #666;
+                                        font-size: 14px;
+                                        margin-bottom: 8px;
+                                    }
+                                    strong{
+                                        color:#222;
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                          }
+                       }
+                    }
+                    // 슬라이드 버튼
+                    .prev-box{
+                        z-index:2;
+                        position: absolute;
+                        top: 170px;
+                        left: 0;
+                        margin: -19px 0 0 -19px;
+                        width: 40px;
+                        height: 40px;
+                        border: 1px solid #e6e6e6;
+                        border-radius: 50%;
+                        background: rgba(0,0,0, .2);
+                        &.on{
+                            opacity: .4;
+                        }
+                        a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 100%;
+                            img{
+                                width:15px;
+                            }
+                        }
+                    }
+                    .next-box{
+                        z-index:2;
+                        position: absolute;
+                        top: 170px;
+                        right: 0;
+                        margin: -19px -19px 0 0;
+                        width: 40px;
+                        height: 40px;
+                        border: 1px solid #e6e6e6;
+                        border-radius: 50%;
+                        background: rgba(0,0,0, .2);
+                        &.on{
+                            opacity: .4;
+                        }
+                        a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 100%;
+                            img{
+                                width:15px;
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+                }
+            }
+            .view-all-box{
+                width: 100%;
+                height: 50px;
+                margin-top: 30px;
+                display: flex;
+                justify-content: center;
+                button{
+                    width: 300px;
+                    height: 100%;
+                    border: 1px solid #ccc;
+                    border-radius: 10px;
+                    font-size: 14px;
+                    background-color: #fff;
+                    color: #666;
+                    cursor: pointer;
+                    em{
+                        color: #ff7b43;
+                    }
+                    i{
+                        margin-left: 8px;
+                        width: 12px;
+                        height: 12px;
+                        position: relative;
+                        
+                        &::before{
+                            content: '';
+                            height: 1px;
+                            width:  8px;
+                            transform: rotate(45deg);
+                            background-color: #000;
+                            position: absolute;
+                            bottom: 63%;
+                            left: 50%;
+                        }
+                        &::after{
+                            content: '';
+                            height: 1px;
+                            width:  8px;
+                            transform: rotate(-45deg);
+                            background-color: #000;
+                            position: absolute;
+                            bottom: 30%;
+                            left: 50%;
+                        }
+                    }
+                }
+            }
+        }
+        #section14{
+            width: 100%;
+            margin-top: 90px;
+            .title{
+                width: 1140px;
+                margin: 0 auto;
+                margin-bottom: 30px;
+                h2{
+                    font-size: 28px;
+                    font-weight: 700;
+                    text-align: center;
+                    color: #333;
+                }
+            }
+            .container{
+                width: 1100px;
+                margin: 0 auto;
+                display: flex;
+                .slide-container {
+                    position: relative;
+                    width:1100px;
+                    margin: 0 auto;
+                    .slide-view {
+                       z-index:1;
+                       position: relative;
+                       overflow: hidden;
+                       width:100%;
+                       .slide-wrap {
+                          position: relative;
+                          width: 1080px;
+                          height: 100%;
+                          display: flex;
+                          .slide {
+                            width:340px;
+                            height: 100%;
+                            margin-right: 25px;
+                            a{
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                .img-box{
+                                    
+                                    img{
+                                        width: 256px;
+                                        border-radius: 10px;
+                                    }
+                                    .timer{
+                                        width: 100%;
+                                        height: 36px;
+                                        background: rgb(247, 153, 96);
+                                        border-radius: 0 0 10px 10px;
+                                        position: relative;
+                                        > span{
+                                            display: block;
+                                            width: 100%;
+                                            height: 100%;
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            font-weight: 700;
+                                            font-size: 17px;
+                                            color: #fff;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            > i{
+                                                display: flex;
+                                                align-items: center;
+                                                height: 100%;
+                                                padding-right: 5px;
+                                                > img{
+                                                    width: 20px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .text-box{
+                                    .row1{
+                                        margin: 10px 0;
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        img{
+                                            width: 64px;
+                                        }
+                                        span{
+                                            font-size: 13px;
+                                            color: #666;
+                                            img{
+                                                margin-right: 2px;
+                                                width: 12px;
+                                            }
+                                            em{
+                                                margin-left: 2px;
+                                                color: #999;
+                                            }
+                                        }
+                                    }
+                                    .row2{
+                                        padding-bottom: 25px;
+                                        h2{
+                                            font-size: 16px;
+                                            color: #333;
+                                            line-height: 22px;
+                                        }
+                                    }
+                                    .row3{
+                                        width: 100%;
+                                        display: flex;
+                                        > strong{
+                                            color: rgb(241, 82, 32);
+                                            font-size: 20px;
+                                            font-weight: bold;
+                                        }
+                                        .price{
+                                            margin-left: 5px;
+                                            em{ 
+                                                vertical-align: bottom;
+                                                color: #333;
+                                                font-weight: 700;
+                                                font-size: 20px;
+                                            }
+                                        }
+                                        .origin{
+                                            padding: 6px 0 0 5px;
+                                            font-size: 15px;
+                                            color: #bbb;
+                                            text-decoration: line-through;
+                                        }
+                                        .remain{
+                                            color: #333;
+                                            margin-left: auto;
+                                            > strong{
+                                                font-size: 13px;
+                                                font-weight: bold;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                          }
+                       }
+                    }
+                    // 슬라이드 버튼
+                    .prev-box{
+                        z-index:2;
+                        position: absolute;
+                        top: 128px;
+                        left: 0;
+                        margin: -19px 0 0 -19px;
+                        width: 40px;
+                        height: 40px;
+                        border: 1px solid #e6e6e6;
+                        border-radius: 50%;
+                        background: rgba(0,0,0, .2);
+                        &.on{
+                            opacity: .4;
+                        }
+                        a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 100%;
+                            img{
+                                width:15px;
+                            }
+                        }
+                    }
+                    .next-box{
+                        z-index:2;
+                        position: absolute;
+                        top: 128px;
+                        right: 0;
+                        margin: -19px -19px 0 0;
+                        width: 40px;
+                        height: 40px;
+                        border: 1px solid #e6e6e6;
+                        border-radius: 50%;
+                        background: rgba(0,0,0, .2);
+                        &.on{
+                            opacity: .4;
+                        }
+                        a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 100%;
+                            img{
+                                width:15px;
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+                }
+            }
+            .view-all-box{
+                width: 100%;
+                height: 50px;
+                margin-top: 30px;
+                display: flex;
+                justify-content: center;
+                button{
+                    width: 300px;
+                    height: 100%;
+                    border: 1px solid #ccc;
+                    border-radius: 10px;
+                    font-size: 14px;
+                    background-color: #fff;
+                    color: #666;
+                    cursor: pointer;
+                    em{
+                        color: #ff7b43;
+                    }
+                    i{
+                        margin-left: 8px;
+                        width: 12px;
+                        height: 12px;
+                        position: relative;
+                        
+                        &::before{
+                            content: '';
+                            height: 1px;
+                            width:  8px;
+                            transform: rotate(45deg);
+                            background-color: #000;
+                            position: absolute;
+                            bottom: 63%;
+                            left: 50%;
+                        }
+                        &::after{
+                            content: '';
+                            height: 1px;
+                            width:  8px;
+                            transform: rotate(-45deg);
+                            background-color: #000;
+                            position: absolute;
+                            bottom: 30%;
+                            left: 50%;
+                        }
+                    }
+                }
+            }
+        }
+        #section15{
+            width: 100%;
+            margin-top: 90px;
+            .title{
+                width: 1140px;
+                margin: 0 auto;
+                margin-bottom: 30px;
+                h2{
+                    font-size: 28px;
+                    font-weight: 700;
+                    text-align: center;
+                    color: #333;
+                }
+            }
+            .container{
+                width: 1100px;
+                margin: 0 auto;
+                display: flex;
+                .slide-container {
+                    position: relative;
+                    width:1100px;
+                    margin: 0 auto;
+                    .slide-view {
+                       z-index:1;
+                       position: relative;
+                       overflow: hidden;
+                       width:100%;
+                       .slide-wrap {
+                          position: relative;
+                          width: 1080px;
+                          height: 100%;
+                          display: flex;
+                          .slide {
+                            width:340px;
+                            height: 100%;
+                            margin-right: 25px;
+                            a{
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                .img-box{
+                                    
+                                    img{
+                                        width: 256px;
+                                        border-radius: 10px;
+                                    }
+                                    .timer{
+                                        width: 100%;
+                                        height: 36px;
+                                        background: rgb(247, 153, 96);
+                                        border-radius: 0 0 10px 10px;
+                                        position: relative;
+                                        > span{
+                                            display: block;
+                                            width: 100%;
+                                            height: 100%;
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            font-weight: 700;
+                                            font-size: 17px;
+                                            color: #fff;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            > i{
+                                                display: flex;
+                                                align-items: center;
+                                                height: 100%;
+                                                padding-right: 5px;
+                                                > img{
+                                                    width: 20px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .text-box{
+                                    .row1{
+                                        margin: 10px 0;
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        img{
+                                            width: 64px;
+                                        }
+                                        span{
+                                            font-size: 13px;
+                                            color: #666;
+                                            img{
+                                                margin-right: 2px;
+                                                width: 12px;
+                                            }
+                                            em{
+                                                margin-left: 2px;
+                                                color: #999;
+                                            }
+                                        }
+                                    }
+                                    .row2{
+                                        padding-bottom: 25px;
+                                        h2{
+                                            font-size: 16px;
+                                            color: #333;
+                                            line-height: 22px;
+                                        }
+                                    }
+                                    .row3{
+                                        width: 100%;
+                                        display: flex;
+                                        > strong{
+                                            color: rgb(241, 82, 32);
+                                            font-size: 20px;
+                                            font-weight: bold;
+                                        }
+                                        .price{
+                                            margin-left: 5px;
+                                            em{ 
+                                                vertical-align: bottom;
+                                                color: #333;
+                                                font-weight: 700;
+                                                font-size: 20px;
+                                            }
+                                        }
+                                        .origin{
+                                            padding: 6px 0 0 5px;
+                                            font-size: 15px;
+                                            color: #bbb;
+                                            text-decoration: line-through;
+                                        }
+                                        .remain{
+                                            color: #333;
+                                            margin-left: auto;
+                                            > strong{
+                                                font-size: 13px;
+                                                font-weight: bold;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                          }
+                       }
+                    }
+                    // 슬라이드 버튼
+                    .prev-box{
+                        z-index:2;
+                        position: absolute;
+                        top: 128px;
+                        left: 0;
+                        margin: -19px 0 0 -19px;
+                        width: 40px;
+                        height: 40px;
+                        border: 1px solid #e6e6e6;
+                        border-radius: 50%;
+                        background: rgba(0,0,0, .2);
+                        &.on{
+                            opacity: .4;
+                        }
+                        a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 100%;
+                            img{
+                                width:15px;
+                            }
+                        }
+                    }
+                    .next-box{
+                        z-index:2;
+                        position: absolute;
+                        top: 128px;
+                        right: 0;
+                        margin: -19px -19px 0 0;
+                        width: 40px;
+                        height: 40px;
+                        border: 1px solid #e6e6e6;
+                        border-radius: 50%;
+                        background: rgba(0,0,0, .2);
+                        &.on{
+                            opacity: .4;
+                        }
+                        a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 100%;
+                            img{
+                                width:15px;
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+                }
+            }
+            .view-all-box{
+                width: 100%;
+                height: 50px;
+                margin-top: 30px;
+                display: flex;
+                justify-content: center;
+                button{
+                    width: 300px;
+                    height: 100%;
+                    border: 1px solid #ccc;
+                    border-radius: 10px;
+                    font-size: 14px;
+                    background-color: #fff;
+                    color: #666;
+                    cursor: pointer;
+                    em{
+                        color: #ff7b43;
+                    }
+                    i{
+                        margin-left: 8px;
+                        width: 12px;
+                        height: 12px;
+                        position: relative;
+                        
+                        &::before{
+                            content: '';
+                            height: 1px;
+                            width:  8px;
+                            transform: rotate(45deg);
+                            background-color: #000;
+                            position: absolute;
+                            bottom: 63%;
+                            left: 50%;
+                        }
+                        &::after{
+                            content: '';
+                            height: 1px;
+                            width:  8px;
+                            transform: rotate(-45deg);
+                            background-color: #000;
+                            position: absolute;
+                            bottom: 30%;
+                            left: 50%;
+                        }
+                    }
+                }
+            }
+        }
+        #section16{
+            width: 100%;
+            margin-top: 90px;//임시
+            .container{
+                width: 1100px;
+                margin: 0 auto;
+                .banner{
+                    display: block;
+                    img{
+                        width: 100%;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+        #section17{
+            width: 100%;
+            margin-top: 90px;
+            .container{
+                width: 1100px;
+                margin: 0 auto;
+                .title{
+                    width: 100%;
+                    margin-bottom: 26px;
+                    h2{
+                        text-align: center;
+                        font-size: 26px;
+                        color: #333;
+                        font-weight: 700;
+                    }
+                }
+                .content{
+                    width: 100%;
+                    .btn-container{
+                        width: 100%;
+                        height: 48px;
+                        margin-bottom: 15px;
+                        ul{
+                            display: flex;
+                            justify-content: center;
+                            li{
+                                margin: 4px;
+                                button{
+                                    height: 40px;
+                                    background: #f8f8f8;
+                                    border: 0;
+                                    border-radius: 10px;
+                                    font-size: 13px;
+                                    color: #333;
+                                    padding: 11px 13px;
+                                    cursor: pointer;
+                                    &.on{
+                                        color: #fff;
+                                        background: #ff7b43;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .recomend1-5{
+                        width: 100%;
+                        font-size: 0;
+                        &.recomend-box2{
+                            display: none;
+                        }
+                        &.recomend-box3{
+                            display: none;
+                        }
+                        &.recomend-box4{
+                            display: none;
+                        }
+                        &.recomend-box5{
+                            display: none;
+                        }
+                        &.recomend-box6{
+                            display: none;
+                        }
+                        &.recomend-box7{
+                            display: none;
+                        }
+                        &.recomend-box8{
+                            display: none;
+                        }
+                        &.recomend-box9{
+                            display: none;
+                        }
+                        &.recomend-box10{
+                            display: none;
+                        }
+                        > ul {
+                            position: relative;
+                            width: 1100px;
+                            display: flex;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+                            li {
+                                margin-top: 36px;
+                                width: 256px;
+                                height: 380px;
+                                white-space: nowrap;
+                                a{
+                                    display: block;
+                                    width: 100%;
+                                    height: 100%;
+                                    .img-box{
+                                        width: 100%;
+                                        img{
+                                            width: 100%;
+                                            border-radius: 10px;
+                                        }
+                                    }
+                                    .text-box{
+                                        width: 100%;
+                                        .row1{
+                                            margin: 10px 0;
+                                            width: 100%;
+                                            display: flex;
+                                            justify-content: space-between;
+                                            img{
+                                                width: 64px;
+                                            }
+                                            span{
+                                                font-size: 13px;
+                                                color: #666;
+                                                img{
+                                                    margin-right: 2px;
+                                                    width: 12px;
+                                                }
+                                                em{
+                                                    margin-left: 2px;
+                                                    color: #999;
+                                                }
+                                            }
+                                        }
+                                        .row2{
+                                            padding-bottom: 8px;
+                                            h2{
+                                                white-space: pre-line;
+                                                font-size: 15px;
+                                                color: #333;
+                                                line-height: 22px;
+                                            }
+                                        }
+                                        .row3{
+                                            width: 100%;
+                                            display: flex;
+                                            .price{
+                                                font-size: 14px;
+                                                em{ 
+                                                  vertical-align: bottom;
+                                                  color: #333;
+                                                  font-weight: 700;
+                                                  font-size: 20px;
+                                                }
+                                                p{
+                                                    padding-top: 5px;
+                                                    font-size: 11px;
+                                                    color: #888;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+    // #enquiry{
+    //     position: absolute;
+    //     z-index: 6;
+    //     bottom: 0;
+    //     right: 0;
+    //     width: 340px;
+    //     height: 670px;
+    //     .enquiry-icon{
+    //         width: 50px;
+    //         height: 50px;
+    //         a{
+    //             width: 100%;
+    //             height: 100%;
+    //             img{
+    //                 width: 100%;
+    //                 height: 100%;
+    //             }
+    //         }
+    //     }
+    //     .content-box{
+    //         width: 320px;
+    //         height: 590px;
+    //         background: rgb(241, 82, 32);
+    //         border-radius: 15px;
+    //         .gap{
+    //             padding: 0 14px;
+    //             h2{
+    //                 width: 100%;
+    //             }
+    //             .first-box{
+    //                 padding-top: 12px;
+    //                 width: 100%;
+    //                 height: 100px;
+    //                 background-color: #ccc;
+    //             }
+    //             .second-box{
+    //                 width: 100%;
+    //                 height: 100px;
+    //                 background-color: #ccc;
+    //             }
+    //         }
+    //         .enquiry-footer{
+    //             width: 100%;
+    //             height: 100px;
+    //             background-color: #999;
+    //             margin: 0 14px;
+    //         }
+    //     }
+    // }
+
+}

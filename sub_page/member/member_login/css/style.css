@@ -1,0 +1,177 @@
+@import url("../../../../css/fonts.css");
+@import url("../../../../css/reset.css");
+@import url("../../../../css/header.css");
+@import url("../../../../css/footer.css");
+@import url("../../../../css/quick_menu.css");
+#wrap {
+  width: 100%;
+}
+#wrap #header #topBanner {
+  display: none;
+}
+#wrap #main {
+  width: 100%;
+  margin-top: 0;
+  background: #f7f7f7;
+}
+#wrap #main #section1 {
+  width: 100%;
+  padding: 100px 0;
+}
+#wrap #main #section1 .login-box {
+  width: 420px;
+  margin: 0 auto;
+}
+#wrap #main #section1 .login-box .title {
+  width: 100%;
+}
+#wrap #main #section1 .login-box .title strong {
+  font-size: 32px;
+  font-weight: 500;
+  color: #000;
+}
+#wrap #main #section1 .login-box .title p {
+  margin-top: 5px;
+  display: block;
+  font-size: 32px;
+  font-weight: 500;
+  color: #000;
+  line-height: 50px;
+  vertical-align: text-bottom;
+}
+#wrap #main #section1 .login-box .title p i {
+  margin-right: 5px;
+}
+#wrap #main #section1 .login-box .title p i img {
+  vertical-align: top;
+  width: 105px;
+}
+#wrap #main #section1 .login-box .content {
+  width: 100%;
+}
+#wrap #main #section1 .login-box .content form {
+  width: 100%;
+}
+#wrap #main #section1 .login-box .content form > ul {
+  width: 100%;
+}
+#wrap #main #section1 .login-box .content form > ul > li {
+  width: 100%;
+}
+#wrap #main #section1 .login-box .content form > ul > li:first-child {
+  margin: 0 0 8px 0;
+}
+#wrap #main #section1 .login-box .content form > ul > li > input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: 0;
+  padding: 3px 15px;
+  background: #fff;
+}
+#wrap #main #section1 .login-box .content form > ul > li > input::-moz-placeholder {
+  color: #bbb;
+}
+#wrap #main #section1 .login-box .content form > ul > li > input:-ms-input-placeholder {
+  color: #bbb;
+}
+#wrap #main #section1 .login-box .content form > ul > li > input::placeholder {
+  color: #bbb;
+}
+#wrap #main #section1 .login-box .content form > ul > li.check-box {
+  margin: 15px 0;
+}
+#wrap #main #section1 .login-box .content form > ul > li.check-box label {
+  color: #666;
+  font-size: 13px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+#wrap #main #section1 .login-box .content form > ul > li.check-box label > input {
+  margin-right: 5px;
+  margin-top: -3px;
+  width: 22px;
+  height: 22px;
+  color: #000;
+}
+#wrap #main #section1 .login-box .content form > ul > li.check-box label input[type=checkbox] {
+  display: none;
+}
+#wrap #main #section1 .login-box .content form > ul > li.find {
+  margin: 30px 0;
+  text-align: center;
+}
+#wrap #main #section1 .login-box .content form > ul > li.find a {
+  margin: 0 10px;
+  position: relative;
+}
+#wrap #main #section1 .login-box .content form > ul > li.find a.findPw::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 1px;
+  height: 8px;
+  background: #ccc;
+  top: 50%;
+  left: -10px;
+  margin-top: -4px;
+}
+#wrap #main #section1 .login-box .content form > ul > li.icon {
+  text-align: center;
+}
+#wrap #main #section1 .login-box .content form > ul > li.icon a.sns-icon {
+  padding: 0 10px;
+}
+#wrap #main #section1 .login-box .content form > ul > li.simple {
+  margin: 40px 0 0 0;
+}
+#wrap #main #section1 .login-box .content form > ul > li.simple a.simple-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #666;
+}
+#wrap #main #section1 .login-box .content form > ul > li.nonmember {
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap #main #section1 .login-box .content form > ul > li.nonmember a.nonmember-btn {
+  color: #666;
+}
+#wrap #main #section1 .login-box .content form > ul > li button {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  background: #ff6001;
+  color: #fff;
+  border: 1px solid #ff6001;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#wrap #main #section1 .login-box .content form > ul .login-banner {
+  margin-top: 30px;
+  width: 100%;
+}
+#wrap #main #section1 .login-box .content form > ul .login-banner a {
+  display: block;
+}
+#wrap #main #section1 .login-box .content form > ul .login-banner a img {
+  width: 100%;
+}
+#wrap #footer {
+  margin-top: 0;
+}

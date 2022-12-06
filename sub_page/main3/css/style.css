@@ -1,0 +1,300 @@
+@charset "UTF-8";
+@import url("../../../css/fonts.css");
+@import url("../../../css/reset.css");
+@import url("../../../css/header.css");
+@import url("../../../css/footer.css");
+@import url("../../../css/quick_menu.css");
+#wrap {
+  width: 100%;
+}
+#wrap #main {
+  width: 100%;
+}
+#wrap #main #section1 {
+  width: 100%;
+  margin-top: 70px;
+}
+#wrap #main #section1 .page-head {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-left: -45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap #main #section1 .page-head button {
+  color: #333;
+  font-size: 18px;
+  padding-left: 30px;
+  background: none;
+  border: 0;
+  position: relative;
+  cursor: pointer;
+}
+#wrap #main #section1 .page-head button::before {
+  content: "◀";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -13px;
+}
+#wrap #main #section1 .page-head strong {
+  margin: 0 45px;
+  color: #333;
+  font-weight: 600;
+  font-size: 30px;
+}
+#wrap #main #section1 .banner {
+  width: 100%;
+}
+#wrap #main #section1 .banner img {
+  width: 100%;
+}
+#wrap #main #section2 {
+  width: 100%;
+}
+#wrap #main #section2 .container {
+  width: 860px;
+  margin: 0 auto;
+}
+#wrap #main #section2 .container .sub-banner {
+  margin-top: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#wrap #main #section2 .container .sub-banner a {
+  display: block;
+  width: 420px;
+  height: 210px;
+}
+#wrap #main #section2 .container .sub-banner a img {
+  width: 100%;
+}
+#wrap #main #section2 .container .template-box {
+  width: 100%;
+}
+#wrap #main #section2 .container .template-box .template-list {
+  width: 100%;
+}
+#wrap #main #section2 .container .template-box .template-list > li {
+  margin-top: 80px;
+  height: 518px;
+}
+#wrap #main #section2 .container .template-box .template-list > li .img-box {
+  width: 100%;
+  height: 340px;
+  overflow: hidden;
+}
+#wrap #main #section2 .container .template-box .template-list > li .img-box img {
+  margin-top: -80px;
+  width: 100%;
+}
+#wrap #main #section2 .container .template-box .template-list > li .content-box {
+  width: 100%;
+  height: 168px;
+  padding-top: 20px;
+  display: flex;
+}
+#wrap #main #section2 .container .template-box .template-list > li .content-box .left {
+  width: 50%;
+}
+#wrap #main #section2 .container .template-box .template-list > li .content-box .left h2 {
+  font-size: 24px;
+  color: #333;
+}
+#wrap #main #section2 .container .template-box .template-list > li .content-box .left .text {
+  padding-top: 15px;
+  font-size: 16px;
+  color: #999;
+  font-weight: 500;
+  line-height: 25px;
+}
+#wrap #main #section2 .container .template-box .template-list > li .content-box .left .text em {
+  padding: 20px;
+}
+#wrap #main #section2 .container .template-box .template-list > li .content-box .right {
+  width: 50%;
+}
+#wrap #main #section2 .container .template-box .template-list > li .content-box .right > ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+#wrap #main #section2 .container .template-box .template-list > li .content-box .right > ul > li {
+  width: 145px;
+  height: 158px;
+  padding: 0 7.5px;
+}
+#wrap #main #section2 .container .template-box .template-list > li .content-box .right > ul > li:nth-child(3) {
+  padding-right: 0;
+}
+#wrap #main #section2 .container .template-box .template-list > li .content-box .right > ul > li a {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+#wrap #main #section2 .container .template-box .template-list > li .content-box .right > ul > li a img {
+  width: 100%;
+  height: 130px;
+}
+#wrap #main #section2 .container .template-box .template-list > li .content-box .right > ul > li a span {
+  padding: 10px 0 0 0;
+  color: #333;
+}
+#wrap #main #section2 .container .template-box .template-list > li .content-box .right > ul > li a span strong {
+  font-size: 18px;
+  font-weight: 600;
+}
+#wrap #main #section3 {
+  width: 100%;
+  margin-top: 90px;
+}
+#wrap #main #section3 .container {
+  width: 860px;
+  margin: 0 auto;
+}
+#wrap #main #section3 .container .author-area {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #333;
+}
+#wrap #main #section3 .container .author-area .icon-bg {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap #main #section3 .container .author-area p {
+  padding-top: 30px;
+  color: #333;
+  font-size: 24px;
+  text-align: center;
+  line-height: 34px;
+}
+#wrap #main #section3 .container .author-area .md {
+  padding-top: 20px;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 17px;
+  color: #666;
+}
+#wrap #main #section3 .container .author-area .md img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+#wrap #main #section3 .container .questions-box {
+  padding-top: 20px;
+  width: 100%;
+}
+#wrap #main #section3 .container .questions-box .title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#wrap #main #section3 .container .questions-box .title > em {
+  font-size: 20px;
+  color: #333;
+}
+#wrap #main #section3 .container .questions-box .title > span {
+  padding-top: 5px;
+  font-size: 14px;
+  color: #333;
+}
+#wrap #main #section3 .container .questions-box .comment-box {
+  margin-top: 10px;
+  width: 100%;
+  height: 122px;
+  background: rgba(238, 238, 238, 0.9);
+  position: relative;
+}
+#wrap #main #section3 .container .questions-box .comment-box .gap {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap #main #section3 .container .questions-box .comment-box .gap .center-message {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+#wrap #main #section3 .container .questions-box .comment-box .gap .center-message a {
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: underline;
+  padding-bottom: 5px;
+}
+#wrap #main #section3 .container .questions-box .comment-box button {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  border: 0;
+  width: 122px;
+  height: 92px;
+  background: rgba(153, 153, 153, 0.2);
+}
+#wrap #main #section3 .container .questions-box .comment-list {
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+}
+#wrap #main #section3 .container .questions-box .comment-list > em {
+  width: 115px;
+  height: 50px;
+}
+#wrap #main #section3 .container .questions-box .comment-list .text {
+  width: 735px;
+  height: 215px;
+  background: rgba(245, 245, 245, 0.9);
+}
+#wrap #main #section3 .container .questions-box .comment-list .text .col-gap {
+  padding: 15px 15px 15px 50px;
+}
+#wrap #main #section3 .container .questions-box .comment-list .text .col-gap .row1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+#wrap #main #section3 .container .questions-box .comment-list .text .col-gap .row2 {
+  width: 100%;
+  margin-bottom: 5px;
+}
+#wrap #main #section3 .container .questions-box .comment-list .text .col-gap .row2 em {
+  color: #333;
+  padding-left: 10px;
+  position: relative;
+}
+#wrap #main #section3 .container .questions-box .comment-list .text .col-gap .row2 em::before {
+  content: url(../img/bg_admin_text.png);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -3px;
+  margin-left: -5px;
+}
+#wrap #main #section3 .container .questions-box .comment-list .text .col-gap .text-box {
+  padding-left: 10px;
+  line-height: 20px;
+  font-size: 13px;
+  color: #666;
+}

@@ -1,0 +1,83 @@
+@import url("../../../css/fonts.css");
+@import url("../../../css/reset.css");
+@import url("../../../css/header.css");
+@import url("../../../css/footer.css");
+@import url("../../../css/quick_menu.css");
+#wrap {
+  width: 100%;
+}
+#wrap #main {
+  width: 100%;
+}
+#wrap #main #section1 {
+  margin-top: 70px;
+  width: 100%;
+}
+#wrap #main #section1 .container {
+  width: 1100px;
+  margin: 0 auto;
+}
+#wrap #main #section1 .container .title {
+  width: 100%;
+  text-align: center;
+}
+#wrap #main #section1 .container .title h2 {
+  font-size: 30px;
+  color: #333;
+  font-weight: 600;
+}
+#wrap #main #section1 .container .sub-title {
+  margin: 50px 0 20px 0;
+}
+#wrap #main #section1 .container .sub-title h3 {
+  font-size: 20px;
+  color: #333;
+  font-weight: 500;
+}
+#wrap #main #section1 .container .slide-container {
+  position: relative;
+  width: 100%;
+  height: 310px;
+}
+#wrap #main #section1 .container .slide-container .slide-view {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap {
+  position: relative;
+  width: 1560px;
+  display: flex;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide {
+  margin-right: 20px;
+  width: 260px;
+  height: 310px;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide:last-child {
+  margin: 0;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide .gap a {
+  display: block;
+  width: 260px;
+  height: 260px;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide .gap a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide .gap .content {
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide .gap .content h4 {
+  color: #222;
+  font-size: 14px;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide .gap .content p {
+  padding-top: 10px;
+  color: #666;
+  font-size: 13px;
+}

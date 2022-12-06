@@ -1,0 +1,161 @@
+@import url("../../../css/fonts.css");
+@import url("../../../css/reset.css");
+@import url("../../../css/header.css");
+@import url("../../../css/footer.css");
+@import url("../../../css/quick_menu.css");
+#wrap {
+  width: 100%;
+}
+#wrap #main {
+  width: 100%;
+}
+#wrap #main #section1 {
+  width: 100%;
+}
+#wrap #main #section1 .container {
+  width: 1100px;
+  margin: 0 auto;
+}
+#wrap #main #section1 .container .cate-menu {
+  width: 100%;
+  margin-top: 50px;
+}
+#wrap #main #section1 .container .cate-menu ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#wrap #main #section1 .container .cate-menu ul li {
+  width: 25%;
+  height: 45px;
+  border: 1px solid #ccc;
+  border-right: 0;
+}
+#wrap #main #section1 .container .cate-menu ul li:nth-child(1) {
+  border-bottom: 0;
+}
+#wrap #main #section1 .container .cate-menu ul li:nth-child(2) {
+  border-bottom: 0;
+}
+#wrap #main #section1 .container .cate-menu ul li:nth-child(3) {
+  border-bottom: 0;
+}
+#wrap #main #section1 .container .cate-menu ul li:nth-child(4) {
+  border-right: 1px solid #ccc;
+  border-bottom: 0;
+}
+#wrap #main #section1 .container .cate-menu ul li:nth-child(8) {
+  border-right: 1px solid #ccc;
+}
+#wrap #main #section1 .container .cate-menu ul li a {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  width: 100%;
+  height: 100%;
+}
+#wrap #main #section2 {
+  width: 100%;
+}
+#wrap #main #section2 .container {
+  width: 1100px;
+  margin: 0 auto;
+}
+#wrap #main #section2 .container .banner {
+  margin-top: 30px;
+  width: 100%;
+  height: 200px;
+}
+#wrap #main #section2 .container .banner img {
+  width: 100%;
+}
+#wrap #main #section2 .container .item-box {
+  margin-top: 30px;
+  width: 100%;
+}
+#wrap #main #section2 .container .item-box ul {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#wrap #main #section2 .container .item-box ul li {
+  width: 256px;
+  height: 411px;
+  margin-top: 50px;
+}
+#wrap #main #section2 .container .item-box ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#wrap #main #section2 .container .item-box ul li a .img-box {
+  width: 256px;
+  height: 256px;
+}
+#wrap #main #section2 .container .item-box ul li a .img-box img {
+  width: 256px;
+  border-radius: 10px;
+}
+#wrap #main #section2 .container .item-box ul li a .text-box .row1 {
+  margin: 10px 0;
+  width: 100%;
+  height: 11px;
+  display: flex;
+  justify-content: space-between;
+}
+#wrap #main #section2 .container .item-box ul li a .text-box .row1 img {
+  height: 100%;
+}
+#wrap #main #section2 .container .item-box ul li a .text-box .row1 span {
+  font-size: 13px;
+  color: #666;
+}
+#wrap #main #section2 .container .item-box ul li a .text-box .row1 span img {
+  margin-right: 2px;
+  width: 12px;
+}
+#wrap #main #section2 .container .item-box ul li a .text-box .row1 span em {
+  margin-left: 2px;
+  color: #999;
+}
+#wrap #main #section2 .container .item-box ul li a .text-box .row2 {
+  height: 44px;
+}
+#wrap #main #section2 .container .item-box ul li a .text-box .row2 h2 {
+  font-size: 14px;
+  color: #333;
+  line-height: 22px;
+}
+#wrap #main #section2 .container .item-box ul li a .text-box .row3 {
+  width: 100%;
+  display: flex;
+}
+#wrap #main #section2 .container .item-box ul li a .text-box .row3 > strong {
+  color: rgb(241, 82, 32);
+  font-size: 18px;
+  font-weight: bold;
+}
+#wrap #main #section2 .container .item-box ul li a .text-box .row3 .price {
+  margin-left: 5px;
+}
+#wrap #main #section2 .container .item-box ul li a .text-box .row3 .price em {
+  vertical-align: bottom;
+  color: #333;
+  font-weight: 700;
+  font-size: 18px;
+}
+#wrap #main #section2 .container .item-box ul li a .text-box .origin {
+  display: block;
+  width: 100%;
+  padding: 12px 0 0 0;
+  font-size: 13px;
+  color: #999;
+  text-decoration: line-through;
+}
+#wrap #main #section2 .container .item-box ul li a .text-box .unit-price {
+  font-size: 11px;
+  color: #888;
+  margin-top: 3px;
+}

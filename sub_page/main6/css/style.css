@@ -1,0 +1,245 @@
+@import url("../../../css/fonts.css");
+@import url("../../../css/reset.css");
+@import url("../../../css/header.css");
+@import url("../../../css/footer.css");
+@import url("../../../css/quick_menu.css");
+#wrap {
+  width: 100%;
+}
+#wrap #main {
+  width: 100%;
+}
+#wrap #main #section1 {
+  width: 100%;
+  margin-top: 70px;
+}
+#wrap #main #section1 .container {
+  width: 1140px;
+  margin: 0 auto;
+}
+#wrap #main #section1 .container .title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#wrap #main #section1 .container .title h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+#wrap #main #section1 .container .menu-list {
+  padding: 0 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+#wrap #main #section1 .container .menu-list h3 {
+  font-size: 20px;
+  color: #333;
+  margin-right: 15px;
+}
+#wrap #main #section1 .container .menu-list ul {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#wrap #main #section1 .container .menu-list ul li {
+  position: relative;
+  padding: 0 15px;
+}
+#wrap #main #section1 .container .menu-list ul li a {
+  font-size: 14px;
+  color: #666;
+}
+#wrap #main #section1 .container .menu-list ul li::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  width: 1px;
+  height: 10px;
+  background-color: #333;
+}
+#wrap #main #section1 .container .menu-list ul li:last-child::after {
+  content: "";
+  width: 0;
+}
+#wrap #main #section1 .container .menu-list button {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  right: 20px;
+  padding: 5px;
+  width: 125px;
+  height: 32px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 12px;
+  color: #666;
+}
+#wrap #main #section1 .container .menu-list button img {
+  margin-top: -5px;
+  padding-right: 5px;
+}
+#wrap #main #section1 .container .content {
+  width: 100%;
+}
+#wrap #main #section1 .container .content .content-list {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+#wrap #main #section1 .container .content .content-list .banner-box {
+  width: 570px;
+  height: 257px;
+  margin: 20px 0;
+}
+#wrap #main #section1 .container .content .content-list .banner-box .gap {
+  padding: 0 20px;
+}
+#wrap #main #section1 .container .content .content-list .banner-box .gap a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#wrap #main #section1 .container .content .content-list .banner-box .gap a .img-box {
+  width: 100%;
+}
+#wrap #main #section1 .container .content .content-list .banner-box .gap a .img-box img {
+  width: 100% s;
+}
+#wrap #main #section1 .container .content .content-list .banner-box .gap a .text-box {
+  padding-top: 10px;
+  width: 100%;
+}
+#wrap #main #section1 .container .content .content-list .banner-box .gap a .text-box h4 {
+  color: #333;
+  font-weight: 400;
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+#wrap #main #section1 .container .content .content-list .banner-box .gap a .text-box span {
+  font-size: 13px;
+  color: #999;
+}
+#wrap #main #section1 .container .pagenation {
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+#wrap #main #section1 .container .pagenation > a {
+  width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  margin-top: 0 8px;
+}
+#wrap #main #section1 .container .pagenation > a img {
+  margin-top: -1px;
+}
+#wrap #main #section1 .container .pagenation > a > span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #999;
+}
+#wrap #main #section1 .container .pagenation > a > span.on {
+  border-bottom: 2px solid #FB5001;
+  color: #FB5001;
+}
+#wrap #main #section1 .container .pagenation .input-box {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  margin-top: -21px;
+  height: 42px;
+  display: flex;
+  border: 1px solid #ccc;
+}
+#wrap #main #section1 .container .pagenation .input-box .left {
+  width: 120px;
+  height: 100%;
+  border-right: 1px solid #ccc;
+}
+#wrap #main #section1 .container .pagenation .input-box .left.on {
+  border: 1px solid #333;
+  border-bottom: 1px solid #ccc;
+  outline: 0;
+}
+#wrap #main #section1 .container .pagenation .input-box .left .container {
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+  position: relative;
+}
+#wrap #main #section1 .container .pagenation .input-box .left .container a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  color: #999;
+}
+#wrap #main #section1 .container .pagenation .input-box .left .container a img {
+  width: 9px;
+  height: 4px;
+}
+#wrap #main #section1 .container .pagenation .input-box .left .container .select-list {
+  display: none;
+  width: 120px;
+  height: 110px;
+  border: 1px solid #333;
+  border-top: 0;
+  position: absolute;
+  left: -1px;
+  top: 40px;
+}
+#wrap #main #section1 .container .pagenation .input-box .left .container .select-list.on {
+  display: block;
+}
+#wrap #main #section1 .container .pagenation .input-box .left .container .select-list ul {
+  width: 100%;
+}
+#wrap #main #section1 .container .pagenation .input-box .left .container .select-list ul li {
+  border-top: 1px solid #ccc;
+  width: 100%;
+  height: 36px;
+}
+#wrap #main #section1 .container .pagenation .input-box .left .container .select-list ul li:first-child {
+  border: 0;
+}
+#wrap #main #section1 .container .pagenation .input-box .left .container .select-list ul li a {
+  height: 100%;
+  width: 100%;
+  color: #333;
+  font-size: 14px;
+  padding: 0 15px;
+}
+#wrap #main #section1 .container .pagenation .input-box .left .container .select-list ul li a:hover {
+  background-color: #ddd;
+}
+#wrap #main #section1 .container .pagenation .input-box .right {
+  width: 230px;
+  height: 100%;
+  position: relative;
+}
+#wrap #main #section1 .container .pagenation .input-box .right input {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  outline: 0;
+  padding: 3px 40px 3px 20px;
+}
+#wrap #main #section1 .container .pagenation .input-box .right a {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -20px;
+  width: 36px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
